@@ -22,7 +22,7 @@ font-family: 'Montserrat', sans-serif;
     45deg,
     rgba(32,32,32,.7) ,
     rgba(16,16,128,.7)
-    ), url('im3.jpg') no-repeat;
+    ), url('https://images.unsplash.com/photo-1526328674894-3faf2b2b3ddb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=368e209d8e38f1f9a1967ca44a7ab6ce&auto=format&fit=crop&w=1351&q=80') no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 50px;
@@ -77,5 +77,30 @@ font-family: 'Montserrat', sans-serif;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
   }
+.svg-animation{
+  width: 300px;
+  height: 300px;
 
+}
+  #gg{
+    width: 300px;
+    height: 300px;
+    transform: rotateZ(0deg);
+    transform-origin: : top top;
+    animation: mover 2s linear infinite normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: red;
+
+  }
+  @keyframes mover{
+    0%{
+      transform: rotateZ(0deg);
+    }
+
+    100%{
+      transform: rotateZ(360deg);
+
+    }
   }
